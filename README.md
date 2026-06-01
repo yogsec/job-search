@@ -1,6 +1,7 @@
 # Job Search
 
-A web application that helps you find hidden job opportunities by generating advanced Google search queries (Google Dorks) that target company career pages directly, bypassing major job boards.
+A web application that helps you find job opportunities by generating advanced Google search queries (Google Dorks).
+![Video](https://github.com/yogsec/job-search/blob/main/Screencast%20From%202026-06-01%2018-25-52.gif?raw=true)
 
 Live Demo: [https://yogsec.github.io/job-search/](https://yogsec.github.io/job-search/)
 
@@ -12,6 +13,8 @@ Live Demo: [https://yogsec.github.io/job-search/](https://yogsec.github.io/job-s
 - Fully client-side – no server required
 
 ## How It Works
+
+Open Job Search: [https://yogsec.github.io/job-search/](https://yogsec.github.io/job-search/)
 
 The application builds a Google Dork query using the following structure:
 
