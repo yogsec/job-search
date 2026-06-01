@@ -4,7 +4,7 @@ A web application that helps you find job opportunities by generating advanced G
 
 ![Job Search](https://github.com/yogsec/job-search/blob/main/Screenshot%20From%202026-06-01%2018-35-24.png?raw=true)
 
-Live Demo: [https://yogsec.github.io/job-search/](https://yogsec.github.io/job-search/)
+Try it here: [https://yogsec.github.io/job-search/](https://yogsec.github.io/job-search/)
 
 ## Features
 
