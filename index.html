@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Job Finder</title>
+    
+    <!-- Tom Select CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Dynamic Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    
+    <!-- Main Gradient Overlay -->
+    <div class="gradient-overlay"></div>
+
+    <!-- macOS Style Window Bar -->
+    <div class="mac-window-bar">
+        <div class="mac-window-controls">
+            <div class="mac-btn mac-btn-red"></div>
+            <div class="mac-btn mac-btn-yellow"></div>
+            <div class="mac-btn mac-btn-green"></div>
+        </div>
+        <div class="mac-window-title"></div>
+        <div class="mac-window-actions">
+            <a href="https://github.com/yogsec" target="_blank" class="mac-action">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linktr.ee/abhinavsingwal" target="_blank" class="mac-action">
+                <i class="fas fa-link"></i>
+            </a>
+            <button id="shareBtn" class="mac-action">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Container - Full Screen -->
+    <div class="main-container">
+        
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h1 class="hero-title">Job Finder</h1>
+        </div>
+
+        <!-- Glass Card Container -->
+        <div class="glass-container">
+            
+            <!-- Job Role Field -->
+            <div class="field-group">
+                <div class="field-label">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Searching For</span>
+                </div>
+                <select id="jobRoleSelect" class="tom-select-custom" placeholder="Type a job role..."></select>
+                <div class="field-hint">Type any role or select from suggestions - Web Developer, Data Scientist, DevOps, etc.</div>
+            </div>
+
+            <!-- Location Field -->
+            <div class="field-group">
+                <div class="field-label">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Location</span>
+                </div>
+                <select id="locationSelect" class="tom-select-custom" placeholder="Type a location..."></select>
+                <div class="field-hint">Type any city, country, or select "Remote" for worldwide opportunities</div>
+            </div>
+
+            <!-- Search Button -->
+            <button id="searchBtn" class="search-button">
+                <span class="search-button-inner">
+                    <i class="fab fa-google"></i>
+                    Search with Google
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+            </button>
+
+            <!-- Results Section -->
+            <div id="resultsSection" class="results-section" style="display: none;">
+                <div class="results-glass">
+                    <div class="results-header">
+                        <div class="results-header-left">
+                            <i class="fas fa-terminal"></i>
+                            <span>Generated Google Dork Query</span>
+                        </div>
+                        <button id="copyBtn" class="results-copy-btn">
+                            <i class="fas fa-copy"></i>
+                            Copy
+                        </button>
+                    </div>
+                    <div class="results-body">
+                        <code id="dorkOutput" class="results-code"></code>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <span class="footer-text">
+                    <i class="fas fa-database"></i> Powered by Google Dorks
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastNotification" class="toast-notification"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <script src="js/jobBoards.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
