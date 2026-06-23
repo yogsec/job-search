@@ -1,8 +1,8 @@
-# Job Search
+# Job Search Tool
 
 ### A web application that helps you find job opportunities.
 
-![Job Search](https://github.com/yogsec/job-search/blob/main/Screenshot%20From%202026-06-01%2018-35-24.png?raw=true)
+![Job Search Tool](https://github.com/yogsec/job-search/blob/main/Screenshot%20From%202026-06-23%2014-33-33.png?raw=true)
 
 ### Try it here: [https://yogsec.github.io/job-search/](https://yogsec.github.io/job-search/)
 
